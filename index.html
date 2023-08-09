@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Array Cardio 💪💪</title>
 </head>
 <body>
     <p><em>Psst: have a look at the JavaScript Console</em> 💁</p>
@@ -101,6 +101,13 @@
     // 8. Reduce Exercise
     // Sum up the instances of each of these
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
+    const trans = data.reduce((obj, item) => {
+      if(!obj[item]){
+        obj[item] = 0
+      }
+      obj[item]++
+      return obj
+    },{})
 
   </script>
 </body>
