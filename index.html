@@ -28,6 +28,31 @@
       { first: 'Hanna', last: 'Hammarström', year: 1829, passed: 1909 }
     ];
 
+    const peopleA = [
+      {
+        name: "Carly",
+        yearOfBirth: 1942,
+        yearOfDeath: 1970,
+      },
+      {
+        name: "Ray",
+        yearOfBirth: 1962,
+        yearOfDeath: 2011,
+      },
+      {
+        name: "Jane",
+        yearOfBirth: 1912,
+        yearOfDeath: 1941,
+      },
+    ]
+
+    const findTheOldest = peopleA.sort(function(a,b) {
+     let newguy = a.yearOfDeath - a.yearOfBirth
+     let lastGuy = b.yearOfDeath - a.yearOfDeath
+     return newguy > lastGuy ? -1 : 1
+   })
+   console.log({findTheOldest})
+
     const people = [
       'Bernhard, Sandra', 'Bethea, Erin', 'Becker, Carl', 'Bentsen, Lloyd', 'Beckett, Samuel', 'Blake, William', 'Berger, Ric', 'Beddoes, Mick', 'Beethoven, Ludwig',
       'Belloc, Hilaire', 'Begin, Menachem', 'Bellow, Saul', 'Benchley, Robert', 'Blair, Robert', 'Benenson, Peter', 'Benjamin, Walter', 'Berlin, Irving',
